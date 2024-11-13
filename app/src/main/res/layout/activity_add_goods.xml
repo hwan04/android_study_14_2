@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddGoodsActivity">
+
+    <TextView
+        android:id="@+id/tvBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="뒤로가기"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvTitle_AddGoods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="세종마켓"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvGoodsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="제목"
+        android:textSize="16sp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle_AddGoods"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/etGoodsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minEms="8"
+        android:textSize="16sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle_AddGoods"
+        app:layout_constraintStart_toEndOf="@+id/tvGoodsTitle"/>
+
+    <TextView
+        android:id="@+id/tvGoodsPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="가격"
+        android:textSize="16sp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/etGoodsTitle"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/etGoodsPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minEms="8"
+        android:textSize="16sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/etGoodsTitle"
+        app:layout_constraintStart_toEndOf="@+id/tvGoodsPrice"/>
+
+    <TextView
+        android:id="@+id/tvGoodsTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="제목"
+        android:textSize="16sp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/etGoodsPrice"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/etGoodsTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minEms="8"
+        android:textSize="16sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/etGoodsPrice"
+        app:layout_constraintStart_toEndOf="@+id/tvGoodsTime"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
