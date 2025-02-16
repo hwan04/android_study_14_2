@@ -4,10 +4,12 @@ import retrofit2.Call
 import retrofit2.http.Body
 import retrofit2.http.POST
 
-interface GoodsApi {
+interface ItemAPI {
     @POST("rpc/add_item2")
-    fun addItmes(@Body newItem: NewGoods):Call<Void>
+    suspend fun addItems(
+        @Body body: itemRequest
+    ): Unit
 
     @POST("rpc/get_item2")
-    fun getItems(): Call<ApiResponse>
+    suspend fun getItems(): ItemResponse
 }

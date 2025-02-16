@@ -12,6 +12,10 @@ android {
     namespace = "com.alom.androidstudy2"
     compileSdk = 34
 
+    buildFeatures{
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.alom.androidstudy2"
         minSdk = 26
@@ -20,7 +24,7 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        buildConfigField ("String", "API_KEY", "\"${properties.getProperty("API_KEY")}\"")
+        buildConfigField ("String", "API_KEY", properties.getProperty("API_KEY"))
     }
 
     buildTypes {
@@ -56,4 +60,6 @@ dependencies {
     implementation(libs.converter.gson)
     implementation(libs.okhttp)
     implementation(libs.logging.interceptor)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.glide)
 }
