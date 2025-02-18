@@ -50,4 +50,10 @@ class MainActivity : AppCompatActivity() {
 
         mainViewModel.updateValue()
     }
+
+    override fun onResume() {
+        super.onResume()
+
+        mainViewModel.updateValue()
+    }
 }
