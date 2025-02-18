@@ -32,6 +32,9 @@ class AddGoodsActivity : AppCompatActivity() {
             val item = itemRequest(title, price, time)
 
             mainViewModel.addValue(item)
+
+            Toast.makeText(this, "item 추가됨", Toast.LENGTH_SHORT).show()
+            finish()
         }
 
         binding.tvBack.setOnClickListener {
